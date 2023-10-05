@@ -30,6 +30,7 @@ void fillListRandom(int * list, int listLength) {
 
 void sort(int * list, int listLength) {
     bool sorted = true;
+
     for (int i = 0; i < listLength-1; i++) {
         if (list[i] > list[i+1]) {
             sorted = false;
