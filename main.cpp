@@ -2,7 +2,7 @@
 
 void fillListRandom(int * list, int listLength) {
     // Get Seed
-    srand(time(NULL));
+	srand( time( 0L ) ); 
 
     // Fill List with random values
     for (int i = 0; i < listLength; i++) {
@@ -37,8 +37,6 @@ void printList(int * list, int listLength, std::string text) {
 int main() {
     const int listLength = 10;
     int list[listLength] = { 0L };
-
-    printList(list, listLength, "unsorted list");
 
     fillListRandom(list, listLength);
 
